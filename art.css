@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+* { 
+  border: 1px solid rgba(0, 0, 0, 0.3);
+} 
+*/
+
+html {
+	background-color:coral;
+}
+
+body {
+	width: 1325px;
+	height: 2000px;
+	/* can't justify content center with body b/c it will try to center and share h1 space with imgs*/
+}
+
+h1 {
+	color:aqua;
+	text-align: center;
+	padding-bottom: 1px;
+	font-family: "Custom";
+	font-size: 200px;
+	letter-spacing: 6px;
+	margin-top: 5px;
+	/* add horizontal nav if needed under h1 */
+}
+
+@font-face {
+    font-family: "Custom";
+	src: url(SEASRN__-webfont.woff); /* Note this font has been downloaded (.woff) from FontSquirrel, but not installed onto the computer */
+}
+
+.images { /*container that holds div class=images*/
+	width: 1315px;
+	height: 1100px;
+	margin-top: -50px;
+	
+}
+
+img { /*image objects*/
+	transform: rotate(90deg);
+	display: inline-block; /* inline-block keeps items on the same line */
+	width: 40%; /* make sure img dimensions are all the same */
+	border-radius: 15px;
+	
+}
+
+.portraits {
+	margin-top: 100px;
+	margin-left: 200px;
+}
+
+.bodies {
+	margin-top: 200px;
+	margin-left: 200px;
+}
+
+
+
+/*Left: (-):left / (+):Right */
+/* right: 800px;  7-8px; inc moves left */
+/* top: ; move downward */
+/* bottom: ; move upward */
+
+/* 	
+This makes two inline elements centered:
+display: flex;
+justify-content: center;
+*/
+/*margin-bottom: 1000px; /* inc the space at the bottom outside of the border */ 
+
+
+
+
+
